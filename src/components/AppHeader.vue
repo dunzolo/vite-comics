@@ -93,7 +93,7 @@ header {
 
         li {
             display: inline-block;
-            font-size: 12px;
+            font-size: 15px;
             padding: 0rem 0.25rem;
 
 
