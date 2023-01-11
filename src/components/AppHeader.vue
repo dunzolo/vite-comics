@@ -83,10 +83,6 @@ header {
     padding: 1rem;
     @include space-between;
 
-    img {
-        width: 80px;
-    }
-
     ul {
         list-style-type: none;
         text-transform: uppercase;
