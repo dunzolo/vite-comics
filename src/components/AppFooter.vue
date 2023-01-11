@@ -107,7 +107,15 @@ export default {
                     <img src="/dc-logo-bg.png" alt="">
                 </div>
             </div>
-        </div>  
+        </div>
+        <div class="bottom-footer">
+            <div class="container">
+                <a href="#">SIGN-UP NOW</a>
+                <nav>
+                    <h2>FOLLOW US</h2>
+                </nav>
+            </div>
+        </div>
     </footer>
 </template>
 
@@ -119,6 +127,9 @@ footer {
     background-color: $light-blue;
 
     .top-footer {
+        position: relative;
+        z-index: 1;
+
         img {
             width: 50px
         }
@@ -190,6 +201,36 @@ footer {
 
         }
 
+    }
+
+    .bottom-footer {
+        background-color: #303030;
+        position: relative;
+        z-index: 1;
+
+        .container {
+            height: 100px;
+            @include space-between;
+
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 0.5rem 1rem;
+                color: $white;
+                border: 2px solid $light-blue;
+
+                &:hover,
+                &:active {
+                    background-color: $light-blue;
+                }
+            }
+
+            h2 {
+                color: $light-blue;
+            }
+
+        }
     }
 }
 </style>
