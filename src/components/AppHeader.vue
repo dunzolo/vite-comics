@@ -83,6 +83,10 @@ header {
     padding: 1rem;
     @include space-between;
 
+    img {
+        width: 80px;
+    }
+
     ul {
         list-style-type: none;
         text-transform: uppercase;
@@ -90,7 +94,8 @@ header {
         li {
             display: inline-block;
             font-size: 15px;
-            padding: 0rem 0.25rem;
+            font-weight: 700;
+            padding: 0rem 1rem;
 
 
             a {

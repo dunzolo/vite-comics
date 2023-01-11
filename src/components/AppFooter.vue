@@ -14,7 +14,7 @@ export default {
                     url: '#'
                 },
                 {
-                    image: 'buy-comics-subscription.png',
+                    image: 'buy-comics-subscriptions.png',
                     label: 'subscription',
                     url: '#'
                 },
@@ -40,7 +40,7 @@ export default {
         <div class="top-footer container">
             <ul>
                 <li v-for="(item, index) in list" :key="index">
-                    <img :src="`../assets/images/${item.image}`" alt="">
+                    <img :src="`/${item.image}`" alt="">
                     <a :href="item.url">
                         {{ item.label }}
                     </a>
@@ -58,15 +58,27 @@ footer {
     background-color: $light-blue;
 
     .top-footer {
+        img {
+            width: 50px
+        }
+
         ul {
             list-style-type: none;
+            padding: 2rem 1rem;
             @include space-between;
 
-            li a {
-                text-transform: uppercase;
-                color: $white;
-                text-decoration: none;
+            li {
+                display: flex;
+                align-items: center;
+
+                a {
+                    text-transform: uppercase;
+                    color: $white;
+                    text-decoration: none;
+                    padding: 0 0.5rem;
+                }
             }
+
         }
     }
 }
