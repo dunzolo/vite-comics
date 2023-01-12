@@ -37,15 +37,17 @@ export default {
 
 <template lang="">
     <footer>
-        <div class="top-footer container">
-            <ul>
-                <li v-for="(item, index) in list" :key="index">
-                    <img :src="`/${item.image}`" alt="">
-                    <a :href="item.url">
-                        {{ item.label }}
-                    </a>
-                </li>
-            </ul>
+        <div class="top-footer">
+            <div class="container">
+                <ul>
+                    <li v-for="(item, index) in list" :key="index">
+                        <img :src="`/${item.image}`" alt="">
+                        <a :href="item.url">
+                            {{ item.label }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="content-footer">
             <div class="container">

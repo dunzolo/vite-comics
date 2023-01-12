@@ -1,13 +1,25 @@
 <script>
-export default {
+import list_series_tv from './data/listSeriesTV.js';
+import CardSeriesTV from './cards/CardSeriesTV.vue';
 
+export default {
+    components: {
+        CardSeriesTV
+    },
+    data() {
+        return {
+            array_seriesTV: list_series_tv
+        }
+    },
 }
 </script>
 
 <template lang="">
     <main>
         <div class="container">
-            <h1>Content goes here</h1>
+            <div class="row">
+                <CardSeriesTV v-for="(item, index) in array_seriesTV" :key="index" :series_card="item"/>
+            </div>
         </div>
     </main>
 </template>
@@ -16,11 +28,11 @@ export default {
 @use '../styles/partials/variables' as *;
 
 main {
-    height: 100px;
     background-color: $black;
 
-    h1 {
-        color: $white;
+    .row {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
 </style>
