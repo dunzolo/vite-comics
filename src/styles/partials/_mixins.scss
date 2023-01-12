@@ -1,5 +1,13 @@
+@use './variables' as *;
+
 @mixin space-between {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@mixin bg-light-blue {
+    color: $white;
+    background-color: $light-blue;
+    text-transform: uppercase;
 }
