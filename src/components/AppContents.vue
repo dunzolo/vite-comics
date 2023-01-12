@@ -76,6 +76,7 @@ main {
             padding: 0.5rem 3rem;
             border: none;
             margin-bottom: 1rem;
+            cursor: pointer;
         }
     }
 }

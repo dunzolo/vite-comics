@@ -28,6 +28,9 @@ export default {
                     label: 'dc power visa',
                     url: '#'
                 },
+            ],
+            socials: [
+                'footer-facebook.png', 'footer-periscope.png', 'footer-pinterest.png', 'footer-twitter.png', 'footer-youtube.png'
             ]
         }
     },
@@ -112,9 +115,16 @@ export default {
         </div>
         <div class="bottom-footer">
             <div class="container">
-                <a href="#">SIGN-UP NOW</a>
+                <a href="#" class="login">SIGN-UP NOW</a>
                 <nav>
                     <h2>FOLLOW US</h2>
+                    <ul>
+                        <li v-for="(item, index) in socials" :key="index">
+                            <a href="/">
+                                <img :src="`/${item}`" alt="">
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </div>
         </div>
@@ -214,7 +224,7 @@ footer {
             height: 100px;
             @include space-between;
 
-            a {
+            .login {
                 text-decoration: none;
                 font-size: 20px;
                 font-weight: 400;
@@ -228,9 +238,25 @@ footer {
                 }
             }
 
-            h2 {
-                color: $light-blue;
+            nav {
+                display: flex;
+
+                h2 {
+                    color: $light-blue;
+                    padding: 0 2rem;
+                }
+
+                ul {
+                    list-style-type: none;
+
+                    li {
+                        display: inline-block;
+                        padding: 0 0.5rem;
+                    }
+                }
+
             }
+
 
         }
     }
