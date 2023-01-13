@@ -185,7 +185,6 @@ footer {
                         list-style-type: none;
 
                         li a {
-                            text-decoration: none;
                             color: $grey;
 
                             &:hover,
@@ -225,7 +224,6 @@ footer {
             @include space-between;
 
             .login {
-                text-decoration: none;
                 font-size: 20px;
                 font-weight: 400;
                 padding: 0.5rem 1rem;
@@ -247,8 +245,6 @@ footer {
                 }
 
                 ul {
-                    list-style-type: none;
-
                     li {
                         display: inline-block;
                         padding: 0 0.5rem;

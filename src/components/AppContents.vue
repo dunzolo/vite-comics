@@ -35,31 +35,32 @@ export default {
 @use '../styles/partials/variables' as *;
 @use '../styles/partials/mixins' as *;
 
-.jumbotron {
-    img {
-        width: 100vW;
-        height: 350px;
-        object-fit: cover;
-        object-position: top;
-    }
-}
-
 main {
     background-color: $black;
 
-    .top-label-light-blue {
-        @include bg-light-blue;
-        font-size: 25px;
-        font-weight: 700;
-        padding: 0.5rem 2rem;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: translateY(-50%);
+    .jumbotron {
+        img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            object-position: top;
+        }
     }
+
 
     .container {
         position: relative;
+
+        .top-label-light-blue {
+            @include bg-light-blue;
+            font-size: 25px;
+            font-weight: 700;
+            padding: 0.5rem 2rem;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateY(-50%);
+        }
 
         .row {
             padding: 2rem 1rem;

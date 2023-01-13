@@ -87,28 +87,29 @@ header {
         width: 80px;
     }
 
-    ul {
-        list-style-type: none;
-        text-transform: uppercase;
+    nav {
+        height: 80px;
 
-        li {
-            display: inline-block;
-            font-size: 15px;
-            font-weight: 700;
-            padding: 0rem 1rem;
+        ul {
+            text-transform: uppercase;
+            height: 100%;
+            display: flex;
 
-
-            a {
+            li a {
+                display: flex;
+                align-items: center;
+                font-size: 15px;
+                font-weight: 700;
+                padding: 0rem 1rem;
+                height: 100%;
+                border-bottom: 5px solid $white;
                 color: $black;
-                text-decoration: none;
 
-                &:hover,
-                &:active {
+                &:hover {
                     color: $light-blue;
                     border-bottom: 5px solid $light-blue;
                 }
             }
-
         }
     }
 }
